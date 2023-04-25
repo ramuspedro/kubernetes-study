@@ -23,4 +23,11 @@ $ kubectl config get-clusters
 
 # use context
 $ kubectl config use-context kind-fullcycle
-``
+```
+
+## Run go
+
+```sh
+# run with go
+$ go run server.go
+```
