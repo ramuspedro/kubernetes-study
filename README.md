@@ -68,4 +68,10 @@ $ kubectl decribe pod pod-name
 
 # run deployment
 $ kubectl apply -f k8s/deployment.yml
+
+# list revisions
+$ kubectl rollout history deployment goserver
+
+# undo deployment to last version (especify revision if want to go to another one)
+$ kubectl rollout undo deployment goserver --to-revision=X
 ```
