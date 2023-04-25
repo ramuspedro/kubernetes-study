@@ -31,3 +31,13 @@ $ kubectl config use-context kind-fullcycle
 # run with go
 $ go run server.go
 ```
+
+Run with docker
+
+```sh
+# docker build
+$ docker build -t ramuspedro/hello-go .
+
+# docker run
+$ docker run --rm -p 8080:8080 ramuspedro/hello-go
+```
