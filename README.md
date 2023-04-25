@@ -41,3 +41,25 @@ $ docker build -t ramuspedro/hello-go .
 # docker run
 $ docker run --rm -p 8080:8080 ramuspedro/hello-go
 ```
+
+Run kubernetes
+
+```sh
+# apply pod.yml
+$ kubectl apply -f k8s/pod.yml 
+
+# list pods
+$ kubectl get pods
+
+# port forward if port not exposed
+$ kubectl port-forward pod/goserver 8080:8080
+
+# delete pod
+$ kubectl delete pod goserver
+
+# run replicaset
+$ kubectl apply -f k8s/replicaset.yml
+
+# get replicaset
+$ kubectl get replicasets
+```
