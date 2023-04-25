@@ -62,4 +62,10 @@ $ kubectl apply -f k8s/replicaset.yml
 
 # get replicaset
 $ kubectl get replicasets
+
+# decribe infomations of pods
+$ kubectl decribe pod pod-name
+
+# run deployment
+$ kubectl apply -f k8s/deployment.yml
 ```
