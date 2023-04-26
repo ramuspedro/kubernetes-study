@@ -69,6 +69,12 @@ $ kubectl decribe pod pod-name
 # run deployment
 $ kubectl apply -f k8s/deployment.yml
 
+# get deployments
+$ kubectl get deployments
+
+# delete deployment
+$ kubectl delete deployment goserver
+
 # list revisions
 $ kubectl rollout history deployment goserver
 
