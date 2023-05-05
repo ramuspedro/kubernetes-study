@@ -7,6 +7,12 @@ Using kind (https://kind.sigs.k8s.io/docs/user/quick-start/#installing-from-rele
 ```shell
 # creating clusters from file
 $ kind create cluster --config=./k8s/kind.yml --name=fullcycle
+
+# delete cluster
+$ kind delete cluster --name=fullcycle
+
+# list clusters
+$ kind get clusters
 ```
 
 ## Kubectl
