@@ -87,3 +87,26 @@ $ kubectl rollout history deployment goserver
 # undo deployment to last version (especify revision if want to go to another one)
 $ kubectl rollout undo deployment goserver --to-revision=X
 ```
+
+Service
+
+```sh
+# You need the deployment working
+# Run service
+$ kubectl apply -f k8s/service.yml
+
+# Get service
+$ kubectl get svc
+
+# Port-forward service 
+$ kubectl port-forward svc/goserver-service 8080:80
+
+# Delete svc
+$ kubectl delete svc goserver-service
+```
+
+Expor o kubernetes
+
+```sh
+$ kubectl proxy --port=8080
+```
