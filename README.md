@@ -110,3 +110,18 @@ Expor o kubernetes
 ```sh
 $ kubectl proxy --port=8080
 ```
+
+Configmap
+
+```sh
+$ kubectl apply -f k8s/configmap-env.yml
+
+$ kubectl apply -f k8s/configmap-family.yml
+```
+
+Enter to pod
+```sh
+$ kubectl exec -it POD_NAME -- bash
+
+$ kubectl logs POD_NAME
+```

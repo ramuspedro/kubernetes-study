@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: goserver-env
+  labels:
+    app: goserver-configmap
+data:
+  NAME: "Pedro Ramos"
+  AGE: "32"
