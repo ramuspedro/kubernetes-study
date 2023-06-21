@@ -124,4 +124,7 @@ Enter to pod
 $ kubectl exec -it POD_NAME -- bash
 
 $ kubectl logs POD_NAME
+
+# verify pods integrated with deployment
+$ kubectl apply -f k8s/deployment.yml && watch -n1 kubectl get pods
 ```
